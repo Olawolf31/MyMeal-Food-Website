@@ -1,0 +1,163 @@
+.body-container {
+  width: 800px;
+  margin: 0px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 9px;
+
+}
+
+
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.menu-list-column-one {
+  flex: 2
+}
+
+.menu-list-column-two {
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.btn-add{
+    background-color: orange;
+    padding: 8px 15px;
+    border: 0px solid;
+    border-radius: 99px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 8px;
+    text-align: center;
+  }
+
+
+.menu-title {
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  .menu-description {
+    font-size: 1em;
+
+  }
+
+.menu-price {
+  font-size: 1em;
+  padding: 9px 0px;
+  font-weight: 700;
+  color: orange
+}
+
+input {
+  width: 50px;
+  margin-left: 5px;
+}
+
+.cart-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+  border-bottom: 1px solid rgb(235, 107, 10);
+}
+
+.cart-list-column-one {
+  flex: 2
+}
+
+.cart-list-column-two {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  padding-top: 25px;
+}
+
+
+.cart-price {
+  font-size: 1em;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+/* modal css */
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: var(--bs-modal-padding);
+  max-height: 20rem;
+  overflow: scroll;
+}
+
+.item-title {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.cart-modal-item {
+  display: flex;
+  margin: 15px 0px;
+}
+
+.cart-modal-price {
+  font-size: 1em;
+  font-weight: 800;
+  margin-top: 5px;
+  color: orange
+}
+
+.cart-modal-count {
+  font-size: 1em;
+  font-weight: 700;
+  margin-left: 73px;
+  border: 1px solid rgb(227, 225, 225);
+  padding: 2px 15px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 2px 15px 2px #D4D4D4;
+box-shadow: 0px 2px 5px 2px #D4D4D4;
+}
+
+.add-item-btn {
+  padding: 2px 18px;
+  margin: 0px 6px;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.remove-item-btn {
+  padding: 2px 18px;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.cart-total-amount {
+  font-size: 1em;
+  font-weight: 700;
+  padding-top: 0px;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .body-container {
+        width: 400px;
+        margin: 0px auto;
+      }
+
+      .menu-list-row-one {
+        flex: 1
+      }
+}

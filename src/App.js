@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Header from '../src/components/Header/Header'
+import Hero from '../src/components/Hero/Hero'
+import Footer from '../src/components/Footer/Footer'
+import AvailableMeals from './AvailableMeals'
+/* import { Context } from './components/StoreContext/Context' */
+import ContextProvider from './components/StoreContext/ContextProvider'
 
 function App() {
+  /* const [lgShow, setLgShow] = useState(false); */
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ContextProvider>
+      <Header />
+      <Hero />
+      <AvailableMeals />
+      <Footer />
+    </ContextProvider>
   );
 }
 

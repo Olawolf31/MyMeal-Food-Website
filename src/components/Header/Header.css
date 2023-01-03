@@ -1,0 +1,87 @@
+.header-app {
+    background-color: rgb(144, 50, 16);
+    display: flex;
+    padding: 1.875rem 1.25rem;
+}
+
+.header-container {
+    width: 75rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-header {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-left: 8.75rem;
+}
+
+
+
+.cart-header {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.607);
+    padding: 0.9rem 2.4rem;
+    color: #fff;
+    border: 0px solid;
+    border-radius: 99px;
+    font-weight: 700;
+    justify-content: space-evenly;
+
+    -webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@-webkit-keyframes tada { 
+    0% {-webkit-transform: scale(1);} 
+    10%, 20% {-webkit-transform: scale(0.9) rotate(-3deg);} 
+    30%, 50%, 70%, 90% {-webkit-transform: scale(1.1) rotate(3deg);} 
+    40%, 60%, 80% {-webkit-transform: scale(1.1) rotate(-3deg);} 
+    100% {-webkit-transform: scale(1) rotate(0);} 
+} 
+@keyframes tada { 
+    0% {transform: scale(1);} 
+    10%, 20% {transform: scale(0.9) rotate(-3deg);} 
+    30%, 50%, 70%, 90% {transform: scale(1.1) rotate(3deg);} 
+    40%, 60%, 80% {transform: scale(1.1) rotate(-3deg);} 
+    100% {transform: scale(1) rotate(0);} 
+} 
+.tada { 
+    -webkit-animation-name: tada; 
+    animation-name: tada; 
+}
+
+
+
+.cart-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cart-title {
+    padding: 0px 3px;
+}
+.cart-icon {
+    max-width: 100%;
+    margin-top: 4px;
+}
+
+.cart-count {
+    margin-left: 0.6rem;
+    background-color: orange;
+    padding: 0px 0.6rem;
+    border: 0px solid;
+    border-radius: 6.1rem;
+}
+
+@media only screen and (max-width: 63em) {
+    .logo-header {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #fff;
+        margin-left: 0px;
+    } 
+}
